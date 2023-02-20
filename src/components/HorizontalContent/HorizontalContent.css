@@ -1,0 +1,22 @@
+.horizontal-content {
+    max-width: 100%;
+    position: relative;
+}
+
+.horizontal-content video {
+    max-width: 100%;
+}
+
+.horizontal-content-info {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    color: white;
+}
+
+.horizontal-content-info h4 {
+    font-family: "Terminal Grotesque";
+    font-size: 70px;
+    font-weight: lighter;
+    margin-bottom: -10px;
+}

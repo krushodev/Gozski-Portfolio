@@ -7,7 +7,7 @@ export const Main = () => {
   return (
     <div className="main-container"> 
       {
-        contentList.map((item) => item.type === "vertical" ? <VerticalContent item={item}/> : <HorizontalContent item={item}/>)
+        contentList.map((item) => item.type === "vertical" ? <VerticalContent item={item} key={item.id}/> : <HorizontalContent item={item} key={item.id}/>)
       }
     </div>
   )
