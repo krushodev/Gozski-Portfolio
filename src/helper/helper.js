@@ -8,62 +8,62 @@ import Video7 from "../assets/videos/verano_galicia(1080p).mp4";
 export const contentList = [
     {
         id: 0,
-        name: "Refresh Galicia",
+        title: "Refresh Galicia",
         description: null,
         copyright: null,
         by: null,
         content: Video5,
-        tagName: "refresh-galicia",
+        tagname: "refresh-galicia",
         type: "horizontal"
     }, 
     {
         id: 1,
-        name: "Keyframes",
+        title: "Keyframes",
         description: "Norman Wiseman (Podcast)",
-        copyright: "&#169; 2022",
+        copyright: "© 2022",
         by: "Personal Project",
         content: Video1,
-        tagName: "keyframes-project",
+        tagname: "keyframes-project",
         type: "vertical"
     },
     {
         id: 2,
-        name: "Verano Galicia",
+        title: "Verano Galicia",
         description: null,
-        copyright: "&#169; 2022",
+        copyright: "© 2022",
         by: "ft. Wunderman Thompson",
         content: Video7,
-        tagName: "verano-galicia",
+        tagname: "verano-galicia",
         type: "horizontal"
     },
     {
         id: 3,
-        name: "Manual de Pedidos del Hincha",
+        title: "Manual de Pedidos del Hincha",
         description: "Campaña Mundial Qatar 2022",
-        copyright: "&#169; 2022",
+        copyright: "© 2022",
         by: "ft. Lanzallamas TV for PedidosYa",
         content: Video2,
-        tagName: "manual-pedidosya",
+        tagname: "manual-pedidosya",
         type: "vertical"
     },
     {
         id: 4,
-        name: "Modo Federal",
+        title: "Modo Federal",
         description: "Social Media",
-        copyright: "&#169; 2022",
+        copyright: "© 2022",
         by: "ft. Lanzallamas TV for MODO",
         content: Video3,
-        tagName: "modo-federal",
+        tagname: "modo-federal",
         type: "vertical"
     },
     {
         id: 5,
-        name: "Comisión O",
+        title: "Comisión O",
         description: "Social Media",
-        copyright: "&#169; 2022",
+        copyright: "© 2022",
         by: "ft. Lanzallamas TV for ENIGMA",
         content: Video6,
-        tagName: "comisión-enigma",
+        tagname: "comisión-enigma",
         type: "vertical"
     }
 ]

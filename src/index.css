@@ -13,3 +13,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Terminal Grotesque";
+  src: local("terminal-grotesque"), url("./assets/fonts/terminal-grotesque.ttf") format("truetype");
+}
