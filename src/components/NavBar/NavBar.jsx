@@ -1,13 +1,19 @@
 import "./NavBar.css";
+import { BsLinkedin } from "react-icons/bs"
 
 export const NavBar = () => {
   return (
-    <div className="navbar-container">
+    <div className="parent">
+      <div className="navbar-container">
         <div className="navbar-info">
-            <h1>&#62;AGUSTIN GÓMEZ KRUCHOWSK</h1>
-            <h2>&#62;VISUAL & MOTION DESIGNER</h2>
+            <h1><span>&#62;</span>AGUSTIN GÓMEZ KRUCHOWSKI</h1>
+            <h2><span>&#62;</span>VISUAL & MOTION DESIGNER</h2>
         </div>
-        <span>Logo</span>
+        <div className="navbar-icon">
+          <span>&#62;</span>
+          <BsLinkedin/>
+        </div>
+      </div>
     </div>
   )
 }

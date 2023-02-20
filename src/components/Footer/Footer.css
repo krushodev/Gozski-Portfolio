@@ -1,8 +1,21 @@
+.parent {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+}
+
 .footer-container {
     display: flex;
-    gap: 1em;
-    position: fixed;
-    bottom: 2%;
-    left: 1%;
     font-size: 1.2em;
+}
+
+h3:first-child {
+    margin-right: 25px;
+}
+
+h3:first-child span {
+    margin-left: 30px;
+    margin-right: 5px;
 }
