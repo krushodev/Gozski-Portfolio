@@ -6,6 +6,7 @@ body {
   font-family: 'Space Mono', monospace, 'Courier New', Courier, monospace;
   line-height: 1.4;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
