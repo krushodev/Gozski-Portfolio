@@ -1,0 +1,24 @@
+.navbar-container {
+    background-color: red;
+}
+
+.navbar-info,span {
+    position: fixed;
+}
+
+.navbar-info {
+    top: 2%;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.navbar-info h1, .navbar-info h2 {
+    font-size: 1.5em;
+}
+
+span {
+    right: 5%;
+    top: 5.5%;
+}

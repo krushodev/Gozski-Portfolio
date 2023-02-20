@@ -1,0 +1,8 @@
+.footer-container {
+    display: flex;
+    gap: 1em;
+    position: fixed;
+    bottom: 2%;
+    left: 1%;
+    font-size: 1.2em;
+}
