@@ -2,7 +2,7 @@
     max-width: 100%;
     display: grid;
     margin-bottom: 2em;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: 5px 0;
 }
 
@@ -14,7 +14,7 @@
 .vertical-content-info {
     display: flex;
     justify-content: center;
-    padding-left: 70px;
+    padding-left: 40px;
     flex-direction: column;
 }
 
@@ -54,4 +54,50 @@
 .comision-enigma {
     background-color: black;
     color: white;
+}
+
+.modo-federal {
+    background-color: gainsboro;
+    
+}
+
+.modo-federal h4 {
+    color: white;
+}
+
+.manual-pedidosya video, .comision-enigma video {
+    order: -1;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+    .vertical-content {
+        display: grid;
+        margin: 0.3em 0;
+        grid-template-columns: 1fr;
+    }
+
+    .vertical-content-info h4 {
+        font-size: 1.5em;
+        margin-bottom: 0.1em;
+    }
+
+    .vertical-content-info h4 + p{
+        margin-bottom: 0.6em;    
+        font-size: 0.6em;
+        font-style: italic;
+    }
+    
+    .vertical-content-info p:not(.vertical-content-info h4 + p) {
+        font-size: 0.6em;
+        margin-bottom: 0.3em;
+    }
+
+    .vertical-content-info p:last-child{
+        padding: 0 0 1.2em;
+    }
+
+    .manual-pedidosya video, .comision-enigma video {
+        order: 0;
+    }
 }

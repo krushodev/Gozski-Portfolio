@@ -25,7 +25,6 @@ export const contentList = [
         content: Video1,
         tagname: "keyframes-project",
         type: "vertical",
-        alignRight: false
     },
     {
         id: 2,
@@ -46,7 +45,6 @@ export const contentList = [
         content: Video2,
         tagname: "manual-pedidosya",
         type: "vertical",
-        alignRight: true
     },
     {
         id: 4,
@@ -57,7 +55,6 @@ export const contentList = [
         content: Video3,
         tagname: "modo-federal",
         type: "vertical",
-        alignRight: false
     },
     {
         id: 5,
@@ -68,6 +65,5 @@ export const contentList = [
         content: Video6,
         tagname: "comision-enigma",
         type: "vertical",
-        alignRight: false
     }
 ]

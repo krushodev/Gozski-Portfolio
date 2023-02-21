@@ -19,3 +19,9 @@ h3:first-child span {
     margin-left: 30px;
     margin-right: 5px;
 }
+
+@media screen and (max-width: 375px) {  
+    .footer-container {
+        font-size: 0.8em;
+    }
+}

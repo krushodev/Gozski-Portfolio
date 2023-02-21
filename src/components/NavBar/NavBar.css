@@ -2,9 +2,10 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    max-width: 100%;
     margin: 0;
     z-index: 10;
+    overflow-x: auto;
 }
 
 .navbar-container {
@@ -38,4 +39,14 @@ h2 span {
     display: flex;
     align-items: center;
     gap: 5px;
+}
+
+@media screen and (max-width: 375px) {
+    .navbar-info h1, .navbar-info h2 {
+        font-size: 1em;
+    }
+
+    .navbar-icon {
+        font-size: 1.3em;
+    }
 }
