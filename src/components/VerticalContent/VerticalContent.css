@@ -1,9 +1,9 @@
 .vertical-content {
     max-width: 100%;
-    background-color: red;
     display: grid;
     margin-bottom: 2em;
     grid-template-columns: 1fr 1fr;
+    margin: 5px 0;
 }
 
 .vertical-content video {
@@ -12,7 +12,6 @@
 }
 
 .vertical-content-info {
-    background-color: greenyellow;
     display: flex;
     justify-content: center;
     padding-left: 70px;
@@ -23,6 +22,7 @@
     font-size: 125px;
     margin-bottom: 5px;
     font-family: "Terminal Grotesque";
+    font-weight: lighter;
 }
 
 .vertical-content-info h4 + p{
@@ -34,4 +34,24 @@
 .vertical-content-info p:not(.vertical-content-info h4 + p) {
     font-size: 25px;
     margin-bottom: 5px;
+}
+
+/* specific styles */
+
+.manual-pedidosya {
+    background-color: black;
+    color: white;
+}
+
+.keyframes-project {
+    background-color: #f1eded;
+}
+
+.keyframes-project h4 {
+    color: white;
+}
+
+.comision-enigma {
+    background-color: black;
+    color: white;
 }

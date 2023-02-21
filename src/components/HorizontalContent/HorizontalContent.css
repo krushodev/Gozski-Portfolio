@@ -1,6 +1,7 @@
 .horizontal-content {
     max-width: 100%;
     position: relative;
+    margin: 5px 0;
 }
 
 .horizontal-content video {

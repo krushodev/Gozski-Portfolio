@@ -24,7 +24,8 @@ export const contentList = [
         by: "Personal Project",
         content: Video1,
         tagname: "keyframes-project",
-        type: "vertical"
+        type: "vertical",
+        alignRight: false
     },
     {
         id: 2,
@@ -44,7 +45,8 @@ export const contentList = [
         by: "ft. Lanzallamas TV for PedidosYa",
         content: Video2,
         tagname: "manual-pedidosya",
-        type: "vertical"
+        type: "vertical",
+        alignRight: true
     },
     {
         id: 4,
@@ -54,7 +56,8 @@ export const contentList = [
         by: "ft. Lanzallamas TV for MODO",
         content: Video3,
         tagname: "modo-federal",
-        type: "vertical"
+        type: "vertical",
+        alignRight: false
     },
     {
         id: 5,
@@ -63,7 +66,8 @@ export const contentList = [
         copyright: "©2022",
         by: "ft. Lanzallamas TV for ENIGMA",
         content: Video6,
-        tagname: "comisión-enigma",
-        type: "vertical"
+        tagname: "comision-enigma",
+        type: "vertical",
+        alignRight: false
     }
 ]

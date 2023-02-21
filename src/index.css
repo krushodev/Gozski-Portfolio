@@ -4,7 +4,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   font-family: 'Space Mono', monospace, 'Courier New', Courier, monospace;
-  line-height: 1.4;
+  line-height: 0.9;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
