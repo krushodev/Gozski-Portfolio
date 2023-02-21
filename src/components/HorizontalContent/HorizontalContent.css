@@ -11,7 +11,7 @@
 .horizontal-content-info {
     position: absolute;
     bottom: 2%;
-    left: 2%;
+    left: 3%;
     color: white;
 }
 
@@ -22,11 +22,7 @@
     margin-bottom: 5px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 360px) {
-    .horizontal-content-info {
-        left: 8%;
-    }
-
+@media screen and (min-width: 320px) and (max-width: 450px) {
     .horizontal-content-info h4 {
         font-size: 1.2em;
         margin-bottom: 0.3em;
@@ -36,3 +32,22 @@
         font-size: 0.6em;
     }
 }
+
+@media screen and (min-width: 450px) and (max-width: 1020px) {
+    .horizontal-content-info h4 {
+        font-size: 1.6em;
+        margin-bottom: 0.5em;
+    }
+
+    .horizontal-content-info p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1600px) {
+    .horizontal-content-info h4 {
+        font-size: 3em;
+        margin-bottom: 0.2em;
+    }
+}
+

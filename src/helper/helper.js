@@ -58,7 +58,7 @@ export const contentList = [
     },
     {
         id: 5,
-        title: "Comisión O",
+        title: "Comisión Ø",
         description: "Social Media",
         copyright: "©2022",
         by: "ft. Lanzallamas TV for ENIGMA",

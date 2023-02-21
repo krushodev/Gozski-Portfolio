@@ -10,7 +10,7 @@ export const VerticalContent = ({item}) => {
         <p><span>&#62;</span>{item.copyright}</p>
         <p><span>&#62;</span>{item.by}</p>
       </div>
-      <video src={item.content}  preload="true" ></video>
+      <video src={item.content} autoPlay muted loop></video>
     </div>
   )
 }
