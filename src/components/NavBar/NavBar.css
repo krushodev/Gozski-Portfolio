@@ -1,23 +1,28 @@
-.parent {
-    position: fixed;
+.parent-navbar {
+    position: sticky;
+    position: -webkit-sticky;
     top: 0;
     left: 0;
-    max-width: 100%;
+    /* width: 100%; */
     margin: 0;
     z-index: 10;
-    overflow-x: auto;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+   /*  width: 100%; */
 }
 
 .navbar-info {
     display: flex;
     align-items: center;
+    width: 100%;
 }
+
 
 .navbar-info h1, .navbar-info h2 {
     font-size: 1.5em;
@@ -39,14 +44,58 @@ h2 span {
     display: flex;
     align-items: center;
     gap: 5px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
-@media screen and (max-width: 400px) {
-    .navbar-info h1, .navbar-info h2 {
+@media screen and (max-width: 500px) {
+    .navbar-info h1 {
         font-size: 1em;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .navbar-info h1 {
+        font-size: 1.2em;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    .navbar-info h1, .navbar-info h2 {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1400px) {
+    .navbar-info h1, .navbar-info h2 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1610px) {
+    .navbar-info {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .navbar-info h1 {
+        height: auto;
+        padding: 20px;
+        line-height: 1.2;
     }
 
+    .navbar-info h2 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
     .navbar-icon {
-        font-size: 1.3em;
+        display: none;
     }
 }

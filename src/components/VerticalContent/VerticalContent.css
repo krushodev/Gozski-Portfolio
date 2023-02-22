@@ -1,5 +1,6 @@
 .vertical-content {
     max-width: 100%;
+    width: 100%;
     display: grid;
     margin-bottom: 2em;
     grid-template-columns: repeat(2, 1fr);
