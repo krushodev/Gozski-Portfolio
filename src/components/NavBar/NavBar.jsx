@@ -12,10 +12,10 @@ export const NavBar = () => {
               <h1><span>&#62;</span>AGUSTIN GÓMEZ KRUCHOWSKI</h1>
               <h2><span>&#62;</span>VISUAL & MOTION DESIGNER</h2>
           </div>
-          <div className="navbar-icon">
+          <a href="https://linkedin.com" className="navbar-icon">
             <span>&#62;</span>
             <BsLinkedin/>
-          </div>
+          </a>
         </div>
       </div>
     </>

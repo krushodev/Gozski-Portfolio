@@ -5,7 +5,7 @@ import { BsLinkedin } from "react-icons/bs";
 
 export const BurgerMenu = () => {
     return(
-        <Menu right isOpen={true}>
+        <Menu right>
             <p><span>&#62;</span>VISUAL & MOTION DESIGNER</p>
             <div className="burger-menu-linkedin">
                 <span>&#62;</span>

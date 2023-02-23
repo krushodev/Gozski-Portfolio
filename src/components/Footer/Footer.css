@@ -1,15 +1,20 @@
 .parent-footer {
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0;
     max-width: 100%;
     margin: 0;
     display: none;
+    color: #10120e;
 }
 
 .footer-container {
     display: flex;
     font-size: 1.2em;
+}
+
+a {
+    color: #10120e;
 }
 
 h3:first-child {
@@ -27,7 +32,7 @@ h3:first-child span {
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1281px) {
     .parent-footer {
         display: block;
     }

@@ -8,13 +8,13 @@
     z-index: 10;
     overflow-x: hidden;
     height: 100%;
+    color: #10120e;
 }
 
 .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
-   /*  width: 100%; */
 }
 
 .navbar-info {
@@ -52,6 +52,13 @@ h2 span {
     .navbar-info h1 {
         font-size: 1em;
         width: 50%;
+    }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .navbar-info h1 {
+        text-align-last: center;
     }
 }
 

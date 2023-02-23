@@ -6,13 +6,14 @@
 display: inline-block;
 text-decoration: none;
 margin-bottom: 35px;
-color: #252525;
+color: #10120e;
 transition: color 0.2s;
 }
 
 /* Change color on hover */
 .bm-item:hover {
-color: white;
+color: #10120e69;
+cursor: pointer;
 }
 
 /* Position and sizing of burger button */
@@ -27,12 +28,13 @@ color: white;
   
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-background: #373a47;
+background: #10120e;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-background: #a90000;
+background: #10120e93;
+transition: 0.6s;
 }
 
 /* Position and sizing of clickable cross button */

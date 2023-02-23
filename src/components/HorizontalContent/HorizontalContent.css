@@ -13,7 +13,10 @@
     position: absolute;
     bottom: 2%;
     left: 3%;
-    color: white;
+}
+
+.verano-galicia .horizontal-content-info {
+    color: #f2f2f2;
 }
 
 .horizontal-content-info h4 {
