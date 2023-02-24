@@ -14,7 +14,7 @@ export const NavBar = () => {
           </div>
           <a href="https://linkedin.com" className="navbar-icon">
             <span>&#62;</span>
-            <BsLinkedin/>
+            <span><BsLinkedin/></span>
           </a>
         </div>
       </div>

@@ -17,11 +17,16 @@ a {
     color: #10120e;
 }
 
+h3, a {
+    transition: all 0.7s;
+}
+
 h3:first-child {
     margin-right: 25px;
 }
 
-h3:first-child span {
+h3 span {
+    display: inline-block;
     margin-left: 30px;
     margin-right: 5px;
 }
@@ -35,5 +40,16 @@ h3:first-child span {
 @media screen and (min-width: 1281px) {
     .parent-footer {
         display: block;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .footer-container h3:hover {
+        color: #787878b7;
+        transform: scale(1.1);
+    }
+
+    .footer-container h3:hover span,  .footer-container h3:hover a  {
+        color: #787878b7;
     }
 }

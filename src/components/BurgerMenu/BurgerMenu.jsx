@@ -1,18 +1,19 @@
 import "./BurgerMenu.css";
 import { slide as Menu } from "react-burger-menu";
 import { BsLinkedin } from "react-icons/bs";
+import { Link } from "react-router-dom"
 
 
 export const BurgerMenu = () => {
     return(
         <Menu right>
             <p><span>&#62;</span>VISUAL & MOTION DESIGNER</p>
-            <div className="burger-menu-linkedin">
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="burger-menu-linkedin">
                 <span>&#62;</span>
                 <BsLinkedin/>
-            </div>
-            <p><span>&#62;</span>INFO</p>
-            <p><span>&#62;</span>EMAIL</p>
+            </a>
+            <Link to={"/info"}><p><span>&#62;</span>INFO</p></Link>
+            <p><a href="mailto:agozski@gmail.com"><span>&#62;</span>EMAIL</a></p>
         </Menu>
     );
 }

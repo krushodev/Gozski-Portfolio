@@ -3,7 +3,7 @@ import "./HorizontalContent.css";
 export const HorizontalContent = ({item}) => {
   return (
     <div className={`horizontal-content ${item.tagname}`}>
-        <video src={item.content} preload="true"></video>
+        <video src={item.content} autoPlay loop muted></video>
         {
             item.title && 
 

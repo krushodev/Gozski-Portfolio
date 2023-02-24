@@ -8,6 +8,11 @@ text-decoration: none;
 margin-bottom: 35px;
 color: #10120e;
 transition: color 0.2s;
+font-size: 1.1em;
+}
+
+.bm-item span {
+    margin-right: 4px;
 }
 
 /* Change color on hover */

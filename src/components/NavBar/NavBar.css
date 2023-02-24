@@ -3,7 +3,6 @@
     position: -webkit-sticky;
     top: 0;
     left: 0;
-    /* width: 100%; */
     margin: 0;
     z-index: 10;
     overflow-x: hidden;
@@ -28,6 +27,14 @@
     font-size: 1.5em;
 }
 
+.navbar-info span{
+    display: inline-block;
+}
+
+h1, h2, .navbar-info, .navbar-info span {
+    transition: all 0.7s;
+}
+
 h1 span{
     margin-left: 30px;
     margin-right: 5px;
@@ -43,7 +50,7 @@ h2 span {
     margin-right: 30px;
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
     width: 100%;
     justify-content: flex-end;
 }
@@ -104,5 +111,22 @@ h2 span {
 @media screen and (max-width: 1280px) {
     .navbar-icon {
         display: none;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .navbar-info h1:hover, .navbar-info h2:hover {
+        color: #787878b7;
+    }
+
+    .navbar-icon:hover span {
+        transition: 1s;
+        color: #787878b7;
+        transform: scale(1.1);
+    }
+
+    .navbar-info h1:hover span, .navbar-info h2:hover span {
+        transform: scale(1.3);
+        color: #787878b7;
     }
 }
