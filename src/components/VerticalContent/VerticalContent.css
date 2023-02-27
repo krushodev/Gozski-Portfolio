@@ -5,11 +5,16 @@
     margin-bottom: 2em;
     grid-template-columns: repeat(2, 1fr);
     margin: 5px 0;
+    position: relative;
 }
 
 .vertical-content video {
     width: 100%;
     height: auto;
+}
+
+.vertical-content div:last-child {
+    position: relative;
 }
 
 .vertical-content-info {
@@ -35,6 +40,10 @@
 .vertical-content-info p:not(.vertical-content-info h4 + p) {
     font-size: 25px;
     margin-bottom: 5px;
+}
+
+.vertical-content:hover .volume-muted, .volume-on {
+    opacity: 1;
 }
 
 /* specific styles */
@@ -66,7 +75,7 @@
     color: white;
 }
 
-.manual-pedidosya video, .comision-enigma video {
+.manual-pedidosya div:last-child, .comision-enigma div:last-child {
     order: -1;
 }
 
