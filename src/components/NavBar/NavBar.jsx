@@ -12,7 +12,7 @@ export const NavBar = () => {
               <h1><span>&#62;</span>AGUSTIN GÓMEZ KRUCHOWSKI</h1>
               <h2><span>&#62;</span>VISUAL & MOTION DESIGNER</h2>
           </div>
-          <a href="https://linkedin.com" className="navbar-icon">
+          <a href="https://www.linkedin.com/in/agustingozski/" target="_blank" rel="noreferrer" className="navbar-icon">
             <span>&#62;</span>
             <span><BsLinkedin/></span>
           </a>

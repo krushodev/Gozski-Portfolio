@@ -46,7 +46,7 @@ export const HorizontalContent = ({item}) => {
 
   return (
     <div className={`horizontal-content ${item.tagname}`}>
-        <video src={item.content} autoPlay muted loop></video>
+        <video src={item.content} autoPlay muted loop playsInline></video>
         {
             item.title && 
 

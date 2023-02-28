@@ -35,7 +35,7 @@ export const VerticalContent = ({item}) => {
         <p><span>&#62;</span>{item.by}</p>
       </div>
       <div>
-      <video src={item.content} autoPlay muted loop ></video>
+      <video src={item.content} autoPlay muted loop playsInline></video>
       {
           volumeOn ? 
           <BsFillVolumeUpFill className="volume-on" onClick={handleClick} />

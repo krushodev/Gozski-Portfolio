@@ -8,7 +8,7 @@ export const BurgerMenu = () => {
     return(
         <Menu right>
             <p><span>&#62;</span>VISUAL & MOTION DESIGNER</p>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="burger-menu-linkedin">
+            <a href="https://www.linkedin.com/in/agustingozski/" target="_blank" rel="noreferrer" className="burger-menu-linkedin">
                 <span>&#62;</span>
                 <BsLinkedin/>
             </a>
