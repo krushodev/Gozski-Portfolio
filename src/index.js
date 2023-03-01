@@ -5,7 +5,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './assets/fonts/terminal-grotesque_open.otf';
 import './assets/fonts/terminal-grotesque.ttf';
-import dotenv from 'dotenv';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,5 +14,3 @@ root.render(
 );
 
 reportWebVitals();
-
-dotenv.config();
