@@ -1,15 +1,14 @@
-import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { Contact } from "./pages/Contact";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Contact } from './pages/Contact';
 
-function App () {
+function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/info' element={<Contact/>} />
+          <Route path='/' element={<Home />} />
+          <Route path='/info' element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -26,7 +26,8 @@
     margin-bottom: 5px;
 }
 
-.volume-muted, .volume-on {
+.volume-muted,
+.volume-on {
     position: absolute;
     right: 3%;
     bottom: 5%;
@@ -40,7 +41,8 @@
     opacity: 0;
 }
 
-.horizontal-content:hover .volume-muted, .volume-on {
+.horizontal-content:hover .volume-muted,
+.volume-on {
     opacity: 1;
 }
 
@@ -72,4 +74,3 @@
         margin-bottom: 0.2em;
     }
 }
-

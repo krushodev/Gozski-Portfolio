@@ -12,7 +12,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.info-container h5{
+.info-container h5 {
     font-size: 1em;
     font-weight: bold;
 }
@@ -29,7 +29,7 @@
     margin-bottom: -10px;
 }
 
-.work ul{
+.work ul {
     list-style-type: none;
 }
 
@@ -61,6 +61,7 @@
     .info-container {
         font-size: 0.9em;
     }
+
     .contact {
         width: 90%;
     }
@@ -99,18 +100,15 @@
     }
 }
 
-
-
-
 @media screen and (min-width: 1000px) {
     .info-content {
         grid-template-columns: 1fr 1.3fr;
     }
-    
+
     .info-content div:first-child {
         margin-left: 10%;
     }
-    
+
     .contact {
         margin-left: 6%
     }
@@ -134,7 +132,7 @@
     .info-content {
         grid-template-columns: 1fr 1.5fr;
     }
-    
+
     .info-content div:first-child {
         margin-left: 20%;
     }
@@ -148,7 +146,7 @@
     .info-content {
         grid-template-columns: 1fr 2fr;
     }
-    
+
     .info-content div:first-child {
         margin-left: 20%;
     }

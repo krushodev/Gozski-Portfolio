@@ -1,14 +1,14 @@
-import "./HorizontalContent.css";
-import { BsFillVolumeMuteFill } from "react-icons/bs";
-import { BsFillVolumeUpFill } from "react-icons/bs";
-import { useState } from "react";
+import './HorizontalContent.css';
+import { BsFillVolumeMuteFill } from 'react-icons/bs';
+import { BsFillVolumeUpFill } from 'react-icons/bs';
+import { useState } from 'react';
 
-export const HorizontalContent = ({item}) => {
-  const [volumeOn, setVolumeOn] = useState(false)
+export const HorizontalContent = ({ item }) => {
+  const [volumeOn, setVolumeOn] = useState(false);
 
   const handleClick = (e) => {
-    if (e.target.nodeName === "svg") {
-      if(item.title) {
+    if (e.target.nodeName === 'svg') {
+      if (item.title) {
         if (volumeOn) {
           e.target.previousElementSibling.previousElementSibling.muted = true;
           setVolumeOn(false);
@@ -25,7 +25,7 @@ export const HorizontalContent = ({item}) => {
         setVolumeOn(true);
       }
     } else {
-      if(item.title) {
+      if (item.title) {
         if (volumeOn) {
           e.target.parentElement.previousElementSibling.previousElementSibling.muted = true;
           setVolumeOn(false);
@@ -46,22 +46,22 @@ export const HorizontalContent = ({item}) => {
 
   return (
     <div className={`horizontal-content ${item.tagname}`}>
-        <video src={item.content} autoPlay muted loop playsInline></video>
-        {
-            item.title && 
+      <video src={item.content} autoPlay muted loop playsInline></video>
+      {
+        item.title &&
 
-            <div className="horizontal-content-info">
-                <h4>{item.title}</h4>
-                <p>{item.description}</p>
-                <p>{item.copyright} {item.by}</p>
-            </div>
-        }
-        {
-          volumeOn ? 
-          <BsFillVolumeUpFill className="volume-on" onClick={handleClick} />
+        <div className='horizontal-content-info'>
+          <h4>{item.title}</h4>
+          <p>{item.description}</p>
+          <p>{item.copyright} {item.by}</p>
+        </div>
+      }
+      {
+        volumeOn ?
+          <BsFillVolumeUpFill className='volume-on' onClick={handleClick} />
           :
-          <BsFillVolumeMuteFill className="volume-muted" onClick={handleClick} />
-        }
+          <BsFillVolumeMuteFill className='volume-muted' onClick={handleClick} />
+      }
     </div>
-  )
+  );
 }

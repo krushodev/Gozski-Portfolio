@@ -20,6 +20,6 @@ code {
 }
 
 @font-face {
-  font-family: "Terminal Grotesque";
-  src: local("terminal-grotesque"), url("./assets/fonts/terminal-grotesque.ttf") format("truetype");
+  font-family: 'Terminal Grotesque';
+  src: local('terminal-grotesque'), url('./assets/fonts/terminal-grotesque.ttf') format('truetype');
 }

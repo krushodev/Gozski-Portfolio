@@ -1,8 +1,8 @@
 .loading-container {
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ldio-r1t45ammlnn div {
@@ -36,16 +36,16 @@
   transform-origin: 0 0;
 }
 
-.ldio-r1t45ammlnn div { 
-    box-sizing: content-box;
+.ldio-r1t45ammlnn div {
+  box-sizing: content-box;
 }
 
 @keyframes ldio-r1t45ammlnn {
-    0% { 
-        transform: translate(-50%,-50%) rotate(0deg); 
-    }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
 
-    100% { 
-        transform: translate(-50%,-50%) rotate(360deg); 
-    }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }

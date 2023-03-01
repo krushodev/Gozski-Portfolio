@@ -1,16 +1,16 @@
-import "./InfoContainer.css";
+import './InfoContainer.css';
 
 export const InfoContainer = () => {
-    return(
-        <div className="info-container">
-            <div className="info-content personal">
+    return (
+        <div className='info-container'>
+            <div className='info-content personal'>
                 <div>
                     <h5><span>&#62;</span>AGE: 26</h5>
                     <h5><span>&#62;</span>EXP: 4 YEARS</h5>
                 </div>
                 <h5><span>&#62;</span>HIS WORK SPANS MOTION GRAPHICS, VISUAL DESIGN AND 3D GENERALISM</h5>
             </div>
-            <div className="info-content work">
+            <div className='info-content work'>
                 <div>
                     <h5><span>&#62;</span>SKILLS:</h5>
                     <ul>
@@ -33,7 +33,7 @@ export const InfoContainer = () => {
                     </ul>
                 </div>
             </div>
-            <p className="contact"><span>©2023</span>Drop him an email and work together! <span>agozski@gmail.com</span></p>
+            <p className='contact'><span>©2023</span>Drop him an email and work together! <span>agozski@gmail.com</span></p>
         </div>
-    )
+    );
 }

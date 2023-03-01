@@ -27,12 +27,12 @@
 .vertical-content-info h4 {
     font-size: 127px;
     margin-bottom: 5px;
-    font-family: "Terminal Grotesque";
+    font-family: 'Terminal Grotesque';
     font-weight: lighter;
 }
 
-.vertical-content-info h4 + p{
-    margin-bottom: 70px;    
+.vertical-content-info h4+p {
+    margin-bottom: 70px;
     font-size: 30px;
     font-style: italic;
 }
@@ -42,7 +42,8 @@
     margin-bottom: 5px;
 }
 
-.vertical-content:hover .volume-muted, .volume-on {
+.vertical-content:hover .volume-muted,
+.volume-on {
     opacity: 1;
 }
 
@@ -68,17 +69,17 @@
 
 .modo-federal {
     background-color: #dcdcdc;
-    
+
 }
 
 .modo-federal h4 {
     color: white;
 }
 
-.manual-pedidosya div:last-child, .comision-enigma div:last-child {
+.manual-pedidosya div:last-child,
+.comision-enigma div:last-child {
     order: -1;
 }
-
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
     .vertical-content {
@@ -92,21 +93,22 @@
         margin-bottom: 0.1em;
     }
 
-    .vertical-content-info h4 + p{
-        margin-bottom: 0.6em;    
+    .vertical-content-info h4+p {
+        margin-bottom: 0.6em;
         font-size: 0.6em;
     }
-    
+
     .vertical-content-info p:not(.vertical-content-info h4 + p) {
         font-size: 0.6em;
         margin-bottom: 0.3em;
     }
 
-    .vertical-content-info p:last-child{
+    .vertical-content-info p:last-child {
         padding: 0 0 15px;
     }
 
-    .manual-pedidosya video, .comision-enigma video {
+    .manual-pedidosya video,
+    .comision-enigma video {
         order: 0;
     }
 }
@@ -117,8 +119,8 @@
         margin-bottom: 0.3em;
     }
 
-    .vertical-content-info h4 + p{
-        margin-bottom: 0.8em;    
+    .vertical-content-info h4+p {
+        margin-bottom: 0.8em;
         font-size: 0.8em;
     }
 
@@ -134,8 +136,8 @@
         margin-bottom: 0.5em;
     }
 
-    .vertical-content-info h4 + p{
-        margin-bottom: 1em;    
+    .vertical-content-info h4+p {
+        margin-bottom: 1em;
         font-size: 1em;
     }
 
@@ -151,8 +153,8 @@
         margin-bottom: 0.7em;
     }
 
-    .vertical-content-info h4 + p{
-        margin-bottom: 2em;    
+    .vertical-content-info h4+p {
+        margin-bottom: 2em;
         font-size: 2em;
     }
 
@@ -161,4 +163,3 @@
         margin-bottom: 0.9em;
     }
 }
-

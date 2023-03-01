@@ -17,7 +17,8 @@ a {
     color: #10120e;
 }
 
-h3, a {
+h3,
+a {
     transition: all 0.7s;
 }
 
@@ -31,7 +32,7 @@ h3 span {
     margin-right: 5px;
 }
 
-@media screen and (max-width: 400px) {  
+@media screen and (max-width: 400px) {
     .footer-container {
         font-size: 0.8em;
     }
@@ -49,7 +50,8 @@ h3 span {
         transform: scale(1.1);
     }
 
-    .footer-container h3:hover span,  .footer-container h3:hover a  {
+    .footer-container h3:hover span,
+    .footer-container h3:hover a {
         color: #787878b7;
     }
 }
