@@ -1,10 +1,30 @@
 import './HorizontalContent.css';
 import { BsFillVolumeMuteFill } from 'react-icons/bs';
 import { BsFillVolumeUpFill } from 'react-icons/bs';
-import { useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
+
 
 export const HorizontalContent = ({ item }) => {
   const [volumeOn, setVolumeOn] = useState(false);
+
+  const videoRef = useRef(null);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5, // Define el nivel de intersección requerido para activar la función
+    });
+    observer.observe(videoRef.current);
+  }, []);
 
   const handleClick = (e) => {
     if (e.target.nodeName === 'svg') {
@@ -46,7 +66,7 @@ export const HorizontalContent = ({ item }) => {
 
   return (
     <div className={`horizontal-content ${item.tagname}`}>
-      <video src={item.content} autoPlay muted loop playsInline></video>
+      <video src={item.content} ref={videoRef} autoPlay muted loop playsInline></video>
       {
         item.title &&
 

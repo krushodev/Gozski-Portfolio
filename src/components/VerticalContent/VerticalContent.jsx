@@ -1,10 +1,30 @@
 import './VerticalContent.css';
 import { BsFillVolumeMuteFill } from 'react-icons/bs';
 import { BsFillVolumeUpFill } from 'react-icons/bs';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 export const VerticalContent = ({ item }) => {
   const [volumeOn, setVolumeOn] = useState(false);
+
+  const videoRef = useRef(null);
+
+  const handleIntersection = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        videoRef.current.play();
+      } else {
+        videoRef.current.pause();
+      }
+    });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(handleIntersection, {
+      threshold: 0.5, // Define el nivel de intersección requerido para activar la función
+    });
+    observer.observe(videoRef.current);
+  }, []);
+
 
   const handleClick = (e) => {
     if (e.target.nodeName === 'svg') {
@@ -35,7 +55,7 @@ export const VerticalContent = ({ item }) => {
         <p><span>&#62;</span>{item.by}</p>
       </div>
       <div>
-        <video src={item.content} autoPlay muted loop playsInline></video>
+        <video src={item.content} ref={videoRef} autoPlay muted loop playsInline></video>
         {
           volumeOn ?
             <BsFillVolumeUpFill className='volume-on' onClick={handleClick} />
