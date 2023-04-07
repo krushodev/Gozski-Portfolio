@@ -54,30 +54,31 @@
     color: #f2f2f2;
 }
 
-.keyframes-project {
-    background-color: #f1e8e8;
-}
-
-.keyframes-project h4 {
-    color: white;
-}
-
-.comision-enigma {
+.modo-federal,
+.paramount-inconcert,
+.hosp-aleman {
     background-color: black;
     color: #f2f2f2;
 }
 
-.modo-federal {
+.modo-balance,
+.keyframes-project,
+.comision-enigma,
+.modo-buenosmodos  {
     background-color: #dcdcdc;
-
 }
 
-.modo-federal h4 {
+.modo-balance h4,
+.keyframes-project h4,
+.comision-enigma h4,
+.modo-buenosmodos  h4 {
     color: white;
 }
 
 .manual-pedidosya div:last-child,
-.comision-enigma div:last-child {
+.comision-enigma div:last-child,
+.modo-balance div:last-child,
+.keyframes-project div:last-child {
     order: -1;
 }
 
