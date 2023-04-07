@@ -3,9 +3,9 @@ import { BsFillVolumeMuteFill } from 'react-icons/bs';
 import { BsFillVolumeUpFill } from 'react-icons/bs';
 import { useRef, useState, useEffect } from 'react';
 
-
 export const HorizontalContent = ({ item }) => {
   const [volumeOn, setVolumeOn] = useState(false);
+  const [videoImported, setVideoImported] = useState(null);
 
   const videoRef = useRef(null);
 
@@ -20,11 +20,17 @@ export const HorizontalContent = ({ item }) => {
   };
 
   useEffect(() => {
+    const loadVideo = async () => {
+      const module = await import(`../../assets/videos/${item.tagname}.mp4`);
+      setVideoImported(module.default);
+    }; 
+    loadVideo();
+
     const observer = new IntersectionObserver(handleIntersection, {
       threshold: 0.5, // Define el nivel de intersección requerido para activar la función
     });
     observer.observe(videoRef.current);
-  }, []);
+  }, [item.tagname]);
 
   const handleClick = (e) => {
     if (e.target.nodeName === 'svg') {
@@ -66,7 +72,7 @@ export const HorizontalContent = ({ item }) => {
 
   return (
     <div className={`horizontal-content ${item.tagname}`}>
-      <video src={item.content} ref={videoRef} autoPlay muted loop playsInline></video>
+      <video src={videoImported} ref={videoRef} autoPlay muted loop playsInline></video>
       {
         item.title &&
 
