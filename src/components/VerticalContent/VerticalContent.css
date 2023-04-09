@@ -45,11 +45,7 @@
 
 /* specific styles */
 
-.manual-pedidosya {
-    background-color: black;
-    color: #f2f2f2;
-}
-
+.manual-pedidosya,
 .modo-federal,
 .paramount-inconcert,
 .hosp-aleman {
@@ -103,29 +99,6 @@
     .vertical-content-info p:last-child {
         padding: 0 0 15px;
     }
-
-    /* Popup */
-
-  .overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-  
-  .content {
-    background-color: #ffffff;
-    padding: 10px;
-    overflow: auto;
-    border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 500px) {
@@ -183,4 +156,4 @@
     .content-vertical {
         transform: scale(1.2);
     }
-  }
+}
