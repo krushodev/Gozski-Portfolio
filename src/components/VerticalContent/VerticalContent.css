@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.vertical-content img {
+.vertical-content video {
     width: 100%;
     height: auto;
     cursor: pointer;
@@ -53,14 +53,14 @@
     color: #f2f2f2;
 }
 
-.modo-balance,
+.galicia-chatgpt,
 .keyframes-project,
 .comision-enigma,
 .modo-buenosmodos  {
     background-color: #dcdcdc;
 }
 
-.modo-balance h4,
+.galicia-chatgpt h4,
 .keyframes-project h4,
 .comision-enigma h4,
 .modo-buenosmodos  h4 {
@@ -69,8 +69,9 @@
 
 .manual-pedidosya div:last-child,
 .comision-enigma div:last-child,
-.modo-balance div:last-child,
-.keyframes-project div:last-child {
+.galicia-chatgpt div:last-child,
+.keyframes-project div:last-child,
+.modo-buenosmodos div:last-child {
     order: -1;
 }
 
@@ -99,6 +100,10 @@
     .vertical-content-info p:last-child {
         padding: 0 0 15px;
     }
+
+    .vertical-content div:last-child {
+        order: -1;
+}
 }
 
 @media screen and (min-width: 375px) and (max-width: 500px) {

@@ -1,10 +1,20 @@
 import './VerticalContent.css';
-import { useState } from 'react';
-import ReactPlayer from 'react-player';
+import { useEffect, useState } from 'react';
 import Popup from 'reactjs-popup';
+import { VideoPlayer } from '../VideoPlayer/VideoPlayer';
 
 export const VerticalContent = ({ item }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [imported, setImported] = useState(null);
+
+  useEffect(() => {
+    const load = async () => {
+      const data = await import(`../../assets/videos/${item.tagname}.mp4`);
+      setImported(data.default);
+    }
+
+    load()
+  }, [item.tagname])
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -19,7 +29,8 @@ export const VerticalContent = ({ item }) => {
         <p><span>&#62;</span>{item.by}</p>
       </div>
       <div>
-        <img src={item.preview} onClick={handleClick} alt={item.tagname}></img>
+        <video src={imported} autoPlay muted playsInline loop
+         onClick={handleClick}></video>
       </div>
       <Popup
         open={isOpen}
@@ -30,9 +41,10 @@ export const VerticalContent = ({ item }) => {
       >
         {close => (
           <div className="overlay" onClick={close}>
-            <div className="content content-vertical">
-              <ReactPlayer url={item.content} controls  width="100%" height={400}/>
-            </div>
+            <VideoPlayer nameId="video-player-vertical" videoId={item.content}/>
+            <button className="close" onClick={close}>
+              &times;
+            </button>
           </div>
         )}
       </Popup>
