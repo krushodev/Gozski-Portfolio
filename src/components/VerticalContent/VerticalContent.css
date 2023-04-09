@@ -8,9 +8,10 @@
     position: relative;
 }
 
-.vertical-content video {
+.vertical-content img {
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 .vertical-content div:last-child {
@@ -40,11 +41,6 @@
 .vertical-content-info p:not(.vertical-content-info h4 + p) {
     font-size: 25px;
     margin-bottom: 5px;
-}
-
-.vertical-content:hover .volume-muted,
-.volume-on {
-    opacity: 1;
 }
 
 /* specific styles */
@@ -108,10 +104,28 @@
         padding: 0 0 15px;
     }
 
-    .manual-pedidosya video,
-    .comision-enigma video {
-        order: 0;
-    }
+    /* Popup */
+
+  .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  
+  .content {
+    background-color: #ffffff;
+    padding: 10px;
+    overflow: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media screen and (min-width: 375px) and (max-width: 500px) {
@@ -164,3 +178,9 @@
         margin-bottom: 0.9em;
     }
 }
+
+@media screen and (min-width: 800px) {
+    .content-vertical {
+        transform: scale(1.2);
+    }
+  }

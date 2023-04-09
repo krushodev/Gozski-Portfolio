@@ -1,55 +1,13 @@
 import './VerticalContent.css';
-import { BsFillVolumeMuteFill } from 'react-icons/bs';
-import { BsFillVolumeUpFill } from 'react-icons/bs';
-import { useState, useRef, useEffect } from 'react';
+import { useState } from 'react';
+import ReactPlayer from 'react-player';
+import Popup from 'reactjs-popup';
 
 export const VerticalContent = ({ item }) => {
-  const [volumeOn, setVolumeOn] = useState(false);
-  const [videoImported, setVideoImported] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const videoRef = useRef(null);
-
-  const handleIntersection = (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    });
-  };
-
-  useEffect(() => {
-    const loadVideo = async () => {
-      const module = await import(`../../assets/videos/${item.tagname}.mp4`);
-      setVideoImported(module.default);
-    };
-    loadVideo();
-
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5, // Define el nivel de intersección requerido para activar la función
-    });
-    observer.observe(videoRef.current);
-  }, [item.tagname]);
-
-  const handleClick = (e) => {
-    if (e.target.nodeName === 'svg') {
-      if (volumeOn) {
-        e.target.previousElementSibling.muted = true;
-        setVolumeOn(false);
-      } else {
-        e.target.previousElementSibling.muted = false;
-        setVolumeOn(true);
-      }
-    } else {
-      if (volumeOn) {
-        e.target.parentElement.previousElementSibling.muted = true;
-        setVolumeOn(false);
-      } else {
-        e.target.parentElement.previousElementSibling.muted = false;
-        setVolumeOn(true);
-      }
-    }
+  const handleClick = () => {
+    setIsOpen(!isOpen);
   }
 
   return (
@@ -61,14 +19,23 @@ export const VerticalContent = ({ item }) => {
         <p><span>&#62;</span>{item.by}</p>
       </div>
       <div>
-        <video src={videoImported} ref={videoRef} autoPlay muted loop playsInline></video>
-        {
-          volumeOn ?
-            <BsFillVolumeUpFill className='volume-on' onClick={handleClick} />
-            :
-            <BsFillVolumeMuteFill className='volume-muted' onClick={handleClick} />
-        }
+        <img src={item.preview} onClick={handleClick} alt={item.tagname}></img>
       </div>
+      <Popup
+        open={isOpen}
+        closeOnDocumentClick={false}
+        onClose={() => setIsOpen(!isOpen)}
+        modal
+        nested
+      >
+        {close => (
+          <div className="overlay" onClick={close}>
+            <div className="content content-vertical">
+              <ReactPlayer url={item.content} controls  width="100%" height={400}/>
+            </div>
+          </div>
+        )}
+      </Popup>
     </div>
   );
 }
